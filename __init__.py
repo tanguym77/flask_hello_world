@@ -11,7 +11,7 @@ def hello_world():
 
 @app.route('/fr/')
 def bonjour():
-    return "Bonjour tout le monde !";
+    return "Faites que ça marche !";
 
                                                                                           
 if __name__ == "__main__":
