@@ -4,7 +4,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy Flask app
+      - name: Deploy Flask
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST_DNS }}
