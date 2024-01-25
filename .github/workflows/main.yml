@@ -14,6 +14,5 @@ jobs:
           script: |
             cd $HOME/www/
             git clone https://github.com/tanguym77/flask_hello_world.git
-            rsync -r ./flask_hello_world/ ./application
-            rm -rf ./flask_hello_world
+            rsync -r ./application
             curl -X POST --basic --user "${{ secrets.ALWAYSDATA_TOKEN }}:" https://api.alwaysdata.com/v1/site/${{ secrets.ALWAYSDATA_SITE_ID }}/restart/
